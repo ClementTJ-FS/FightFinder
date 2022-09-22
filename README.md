@@ -1,6 +1,7 @@
 # Fight Finder
 
----
+[]: # Description: A web app that allows users to search for fights in the UFC and Boxing.
+[]: # Author: [TJ Clement](https://github.com/ClementTJ-FS)
 
 Fight Finder is a web application that allows users to see upcoming UFC and Boxing events.
 
@@ -17,4 +18,4 @@ Fight Finder is a web application that allows users to see upcoming UFC and Boxi
 
 ## Preview:
 
-![FF](\dev\portfolio\public\img\projects\FF.png)
+![FF](/img/FF.png)
