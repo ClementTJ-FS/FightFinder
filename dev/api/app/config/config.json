@@ -10,7 +10,8 @@
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "port": "5432"
   },
   "staging": {
     "use_env_variable": "DATABASE_URL"
