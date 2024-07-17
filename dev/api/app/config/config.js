@@ -14,10 +14,7 @@ module.exports = {
     use_env_variable: 'DATABASE_URL',
     dialect: 'postgres',
     seedStorage: 'sequelize',
-    ssl: {
-      require: true,
-      rejectUnauthorized: false,
-    },
+    ssl: true,
   },
   staging: {
     use_env_variable: 'DATABASE_URL',
