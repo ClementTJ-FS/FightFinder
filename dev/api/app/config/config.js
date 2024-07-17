@@ -16,7 +16,7 @@ module.exports = {
     seedStorage: 'sequelize',
     ssl: {
       rejectUnauthorized: true,
-      ca: fs.readFileSync('./files/ca.pem').toString(),
+      ca: fs.readFileSync(path.join(__dirname, './files/ca.pem')).toString(),
     },
   },
   staging: {
