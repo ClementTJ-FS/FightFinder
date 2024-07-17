@@ -15,8 +15,8 @@ module.exports = {
     dialect: 'postgres',
     seedStorage: 'sequelize',
     ssl: {
-      rejectUnauthorized: true,
-      ca: process.env.CA,
+      require: true,
+      rejectUnauthorized: false,
     },
   },
   staging: {
