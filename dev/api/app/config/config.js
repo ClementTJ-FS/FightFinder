@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-export default {
+module.exports = {
   development: {
     username: 'postgres',
     password: 'postgrespw',
