@@ -29,11 +29,11 @@ app.use(
 );
 
 //controllers
-app.use('./auth', authCtrl);
-app.use('/users', usersCtrl);
-app.use('/fighters', fightersCtrl);
-app.use('/fights', fightsCtrl);
-app.use('/events', eventsCtrl);
+app.use(authCtrl);
+app.use(usersCtrl);
+app.use(fightersCtrl);
+app.use(fightsCtrl);
+app.use(eventsCtrl);
 
 // path to react build
 app.use(express.static(path.join(__dirname, '../../reactjs/build')));
