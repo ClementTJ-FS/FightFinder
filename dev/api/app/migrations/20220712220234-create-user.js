@@ -40,11 +40,11 @@ module.exports = {
       },
       resetToken: {
         allowNull: true,
-        type: DataTypes.STRING,
+        type: Sequelize.STRING,
       },
       resetTokenExpiry: {
         allowNull: true,
-        type: DataTypes.DATE,
+        type: Sequelize.DATE,
       },
     });
   },
