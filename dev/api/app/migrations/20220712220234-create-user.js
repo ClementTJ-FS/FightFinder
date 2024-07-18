@@ -38,6 +38,12 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
       },
+      resetToken: {
+        type: DataTypes.STRING,
+      },
+      resetTokenExpiry: {
+        type: DataTypes.DATE,
+      },
     });
   },
   async down(queryInterface, Sequelize) {
