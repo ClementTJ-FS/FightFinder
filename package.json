@@ -21,7 +21,7 @@
   },
   "engines": {
     "node": "20.x",
-    "npm": "9.x"
+    "npm": "10.x"
   },
   "dependencies": {
     "sequelize": "^6.21.3",
