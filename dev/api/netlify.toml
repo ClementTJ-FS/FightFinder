@@ -3,6 +3,6 @@
   node_bundler = "esbuild"
 [[redirects]]
   force = true
-  from = "/*"
+  from = "/app/api/*"
   status = 200
-  to = "/app/api/:splat"
+  to = "/:splat"
