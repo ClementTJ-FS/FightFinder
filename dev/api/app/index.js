@@ -6,8 +6,8 @@ const express = require('express'),
   fightsCtrl = require('./controllers/fights'),
   eventsCtrl = require('./controllers/events'),
   authCtrl = require('./controllers/auth'),
-  path = require('path'),
-  serverless = require('serverless-http');
+  path = require('path');
+import serverless from 'serverless-http';
 
 require('dotenv').config();
 
@@ -29,7 +29,7 @@ app.use(
 );
 
 //controllers
-app.use('./auth', authCtrl);
+app.use('/auth', authCtrl);
 app.use('/users', usersCtrl);
 app.use('/fighters', fightersCtrl);
 app.use('/fights', fightsCtrl);
@@ -60,4 +60,5 @@ app.use((error, req, res, next) => {
 });
 
 module.exports = app;
+
 module.exports.handler = serverless(app);
