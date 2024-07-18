@@ -30,7 +30,7 @@
     "nodemon": "^2.0.19"
   },
   "engines": {
-    "node": "19.x",
+    "node": "20.x",
     "npm": "9.x"
   }
 }
