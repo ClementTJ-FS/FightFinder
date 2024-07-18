@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"nodemon -e js --watch app --watch index.js\" \"cd ../reactjs && npm start\"",
     "migrate": "cd app && npx sequelize-cli db:seed:all && npx sequelize-cli db:migrate:undo:all && npx sequelize-cli db:migrate && npx sequelize-cli ",
-    "install": "concurrently \"npm install\";  concurrently \"npm run migrate\";"
+    "install": "concurrently \"npm:install\";  concurrently \"npm:migrate\";"
   },
   "keywords": [
     "API"
