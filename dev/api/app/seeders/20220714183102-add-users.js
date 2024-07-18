@@ -15,6 +15,8 @@ module.exports = {
           favSport: 'mma',
           createdAt: new Date(),
           updatedAt: new Date(),
+          resetToken: null,
+          resetTokenExpiry: null,
         },
       ],
       {}
