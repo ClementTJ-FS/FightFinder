@@ -6,8 +6,8 @@ const express = require('express'),
   fightsCtrl = require('./controllers/fights'),
   eventsCtrl = require('./controllers/events'),
   authCtrl = require('./controllers/auth'),
-  path = require('path');
-import serverless from 'serverless-http';
+  path = require('path'),
+  serverless = require('serverless-http');
 
 require('dotenv').config();
 
