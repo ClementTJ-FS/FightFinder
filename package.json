@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-reactjs": "npm install --prefix dev/reactjs",
-    "install-api": "npm install --prefix dev/api",
+    "install-reactjs": "npm install --prefix dev/reactjs --omit=dev",
+    "install-api": "npm install --prefix dev/api --omit=dev",
     "build-reactjs": "npm run build --prefix dev/reactjs",
     "build-api": "npm run migrate --prefix dev/api",
     "heroku-postbuild": "concurrently \"npm:install-*\"; concurrently \"npm:build-*\";",
