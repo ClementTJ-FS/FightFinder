@@ -8,8 +8,6 @@ const express = require('express'),
   authCtrl = require('./controllers/auth'),
   path = require('path');
 
-import serverless from 'serverless-http';
-
 require('dotenv').config();
 
 app.use(express.urlencoded({ extended: true }));
@@ -60,6 +58,4 @@ app.use((error, req, res, next) => {
   });
 });
 
-// module.exports = app;
-
-export const handler = serverless(app);
+module.exports = app;

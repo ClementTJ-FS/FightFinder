@@ -2,7 +2,7 @@
   "name": "finalproject-api",
   "version": "1.0.0",
   "description": "API for the final project in WAI.",
-  "main": "app/index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"nodemon -e js --watch app --watch index.js\" \"cd ../reactjs && npm start\"",

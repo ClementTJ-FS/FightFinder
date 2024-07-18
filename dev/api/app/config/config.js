@@ -1,4 +1,5 @@
 const fs = require('fs');
+require('dotenv').config();
 
 module.exports = {
   development: {
@@ -11,13 +12,13 @@ module.exports = {
     seedStorage: 'sequelize',
   },
   production: {
-    use_env_variable: 'DATABASE_URL',
+    use_env_variable: process.env.DATABASE_URL,
     dialect: 'postgres',
     seedStorage: 'sequelize',
     dialectOptions: {
       ssl: {
-        require: true, // This will help you. But you will see nwe error
-        rejectUnauthorized: false, // This line will fix new error
+        require: true,
+        rejectUnauthorized: false,
       },
     },
   },
